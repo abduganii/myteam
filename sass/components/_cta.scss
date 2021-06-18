@@ -1,0 +1,48 @@
+.call {
+    padding-top: 76px;
+    padding-bottom: 76px;
+    background-color: $color-7e;
+    background-image: url('../img/Group\ 8\ \(2\).svg');
+    background-repeat: no-repeat;
+    background-position: bottom left -1.5rem;
+    background-size: 20rem 12.2rem;
+
+    .container {
+        @include FlexCentur;
+        max-width: 91.7rem;
+
+        @include respond(tablet-uchun) {
+            padding: 0 95px;
+        }
+
+
+        @include respond(telefonlar-uchun) {
+            flex-direction: column;
+            padding-left: 2.4rem;
+            padding-right: 2.4rem;
+        }
+
+
+    }
+
+    &--p {
+        font-weight: bold;
+        font-size: 4.8rem;
+        line-height: 4.8rem;
+        color: #012F34;
+
+        @include respond(tablet-uchun) {
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 32px;
+        }
+
+        @include respond(telefonlar-uchun) {
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 32px;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

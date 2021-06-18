@@ -1,0 +1,41 @@
+.btm {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding: 9px 33px;
+    border: 2px solid $color-ff;
+    border-radius: 24px;
+    margin-left: auto;
+    text-decoration: none;
+
+    &__itemFFF {
+        color: black;
+        border: 2px solid black;
+        margin: 0 auto;
+        margin-top: 2.4rem;
+
+        &:hover {
+            background-color: black;
+            color: white;
+        }
+
+    }
+
+    &__hover:hover {
+        background-color: $color-ff;
+        color: black;
+
+    }
+
+    &__hover {
+        @include respond(telefonlar-uchun) {
+            display: none;
+            margin: 0;
+        }
+
+    }
+
+
+}
